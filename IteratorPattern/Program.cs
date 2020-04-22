@@ -39,7 +39,9 @@ namespace IteratorPattern
 
             Console.WriteLine("Months that have 30 days");
             Console.WriteLine($"-----------------------------------------------------------------------{Environment.NewLine}");
+            
             IEnumerable<KeyValuePair<string, int>> monthsWith30Days = months.Where(m => m.Value == 30);
+
             foreach (KeyValuePair<string, int> month in monthsWith30Days)
             {
                 Console.WriteLine($"Month: {month.Key} has {month.Value} days");
